@@ -1,0 +1,27 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Scene Transition Template"
+config/description="A hyperminimal template project with a scene switch + screen wipe setup.
+
+SceneManager.load_scene(<path_to_scene>)"
+run/main_scene="res://Scenes/MainMenu.tscn"
+config/features=PackedStringArray("4.2", "Forward Plus")
+
+[autoload]
+
+SceneManager="*res://Autoload/SceneManager/SceneManager.tscn"
+
+[display]
+
+window/size/mode=2
+window/stretch/mode="canvas_items"
